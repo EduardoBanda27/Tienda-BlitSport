@@ -111,7 +111,7 @@ Blanco</p>
         
         <!--Botones-->
         <div class="col4">
-   <a href="index.php"><input style="border:1px solid;margin-bottom: 10%;" type="button" onclick="" value="Area de compra"/><br></a>
+   <a href="https://buy.stripe.com/test_7sI8zq5G58bwb729AB"><input style="border:1px solid;margin-bottom: 10%;" type="button" onclick="" value="Pagar"/><br></a>
           <input style="border:1px solid" type="button" id="opener" value="Codigo QR" />
 
           <div id="dialog" title="Codigo QR">
