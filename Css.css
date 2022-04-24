@@ -1,0 +1,464 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/03/2021, 11:39:56 PM
+    Author     : melia
+*/
+
+/*model viewer* NO BORRAR AHHHH*/
+model-viewer{
+    height: 100%;
+    margin: 0 auto;
+  }
+  /*Navbar*/
+  .navbar-custom{
+      background-color: rgba(10, 10, 10, 0.9);
+      border: 0;
+      border-radius: 0;
+      z-index: 1000;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      transition: background, padding 0.4s ease-in-out 0s;
+  }
+  
+  /*TITULOS DE PRODUCTOS EN LA PANTALLA PARA COMPRARLOS*/
+  .titulopc{
+    font-weight:bold;
+    
+  }
+  
+  .titulocat{
+    font-weight:bold;
+    
+  }
+  
+  .tituloprin{
+  color: white; 
+  font-size: 70px;
+  font-family:sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+    
+  }
+  
+  .margenimg{
+    border: blue 70px solid;
+  }
+  /*Login and Catalogo */
+  .h-login{
+      margin: 2% auto;
+      padding: 2% 10%;
+      width: 55%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('https://cdn.glitch.com/acb272d3-62f0-4f6b-811c-9555ba4d6893%2Fbackground-login.jpeg?v=1616303292459') ;
+      border: 2px solid rgba(10, 10, 10, 0.9);
+      box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+  }
+  .col3 {
+      padding: 2% 0;
+      float: left;
+      width: 33%;
+      
+  }
+  .row_mb-3 {
+      
+      display: flex;
+      justify-content: space-between;
+  }
+  #three-columns-m {
+      background: #ffffff;
+      color: #828282;
+  
+  }
+  .Grid--center {
+      text-align: center;
+  }
+  .image-gift {
+      min-height: 400px;
+      margin-bottom: 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .title-m {
+      padding: 2% 0;
+  }
+  .custom-text {
+      font-size: 15px !important;
+      line-height: 120%;
+      letter-spacing: normal;
+  }
+  .text-description-m {
+      height: 50px;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .tamaño-200{
+      width: 200px;
+  }
+  .tamaño-250{
+      width: 250px;
+  }
+  .tamaño-300{
+      width: 300px;
+      border:black 20px solid;
+  }
+  .tamaño-460{
+    width:310px;
+    border:solid 2px;
+  }
+  /* home page*/
+  .Container{
+    padding: 0 100px;
+  }
+  .h-stories{
+      margin: 2% auto !important;
+      padding: 2% 4%;
+      width: 80%;
+      background-repeat: no-repeat;
+      background-color: white ;
+      border: 2px solid rgba(10, 10, 10, 0.9);
+      box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+  }
+  .col6{
+     
+    width: 50%;
+  }
+  .col8{
+    width:65%;
+    
+  }
+  .col4{
+    width:20%;
+  
+  }
+  .border{
+    border: 1px solid black;
+  }
+  /*Lightbox */
+   #photos div {
+      display: block;
+      max-width: 20%;
+    }
+    .tamaño img{
+      width: 500%;
+      align-items: center;
+  }
+  @media (max-width:768px){
+  .tamaño img{
+      width: 600px !important;
+      align-items: center;
+  }
+  
+  }
+  @media (max-width:640px){
+  .tamaño img{
+      width: 300px !important;
+      align-items: center;
+  }
+  
+  }
+  
+    .galeria {
+      padding: 20px 0;
+      
+      justify-content: center;
+      box-sizing: border-box;
+      list-style: none;
+    }
+    
+    .galeria__item {
+      width: 80%;
+      cursor: pointer;
+    }
+    @media (min-width:480px) {
+      .galeria__item {
+        width: 48%;
+        margin: 5px;
+      }
+    }
+    @media (min-width:768px) {
+      .galeria__item {
+        width: 30%;
+      }
+    }
+    @media (min-width:1024px) {
+      .galeria__item {
+        width: 20%;
+        margin: 15px;
+      }
+    }
+    
+    .modal {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.7);
+      top: 0;
+      left: 0;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal__img {
+      width: 70%;
+      max-width: 500px;
+    }
+    
+    .modal__boton {
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 25px;
+      font-family: monospace;
+      line-height: 50px;
+      text-align: center;
+      background: red;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  
+  
+  
+  
+  /*Img home page*/
+  
+  .bg-slide{
+    background-image: url('https://memorialhermannfirstcolony.com/wp-content/uploads/2019/11/header1-scaled.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 500px;
+  
+    
+  }
+  .titan-caption {
+      position: relative;
+      display: table;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+  
+  }
+  .caption-content{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 10% 0%;
+    
+  }
+  .titan-title-size-1 {
+      letter-spacing: 4px;
+      font-size: 15px;
+  }
+  .font-alt {
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  .titan-title-size-4 {
+      letter-spacing: 24px;
+      font-weight: 400;
+      font-size: 48px;
+      color: white;
+  }
+  .titan-title-size-m {
+      letter-spacing: 24px;
+      font-weight: 400;
+      font-size: 48px;
+      color: black;
+  }
+  a, .btn {
+      transition: all 0.125s ease-in-out 0s;
+  }
+  .btn {
+      border-radius: 0;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      padding: 8px 37px;
+  }
+  .btn.btn-round {
+      border-radius: 2px;
+  }
+  .btn.btn-border-w {
+      width: 17%;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      color: #fff;
+  }
+  
+  
+  
+  /*Module*/
+  ul.tabs {
+          margin: 0;
+          padding: 0;
+          float: left;
+          list-style: none;
+          height: 32px;
+          border-bottom: 1px solid #999999;
+          border-left: 1px solid #999999;
+          width: 95%;
+      }
+      ul.tabs li {
+          float: left;
+          margin: 0;
+          cursor: pointer;
+          padding: 0px 21px ;
+          height: 31px;
+          line-height: 31px;
+          border: 1px solid #999999;
+          border-left: none;
+          font-weight: bold;
+          background: #EEEEEE;
+          overflow: hidden;
+          position: relative;
+      }
+      ul.tabs li:hover {
+          background: #CCCCCC;
+      }    
+      ul.tabs li.active{
+          background: #FFFFFF;
+          border-bottom: 1px solid #FFFFFF;
+      }
+      .tab_container {
+          border: 1px solid #999999;
+          border-top: none;
+          clear: both;
+          float: left; 
+          width: 100%;
+          background: #FFFFFF;
+      }
+      .tab_content {
+          padding: 20px;
+          font-size: 1.2em;
+          display: none;
+      }
+      #container {
+          width: 600px;
+          margin: 0 auto;    
+      }
+  
+  
+  
+  /*Footer*/
+  @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body{
+      font-family: "Roboto Condensed", sans-serif;
+      line-height: 1.5;
+    
+  }
+  footer{
+      background: #222;
+      color: #fff;
+      padding: 60px 0;
+  }
+  .container{
+      width: 100%;
+      max-width: 1100px;
+      padding: 0 20px;
+      margin: 0 auto;
+  }
+  li{
+      list-style: none;
+      
+  }
+  a{
+      text-decoration: none;
+      color: #ccc;
+  }
+  .letter-uppercase
+  {
+       text-transform: uppercase;
+  }
+  .footer-content{
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+  .items{
+      width:30%;
+  }
+  .items .logo{
+      text-transform: capitalize;
+      font-size: 1.4em;
+      color: #b6b6b6;
+  }
+  .items p{
+      margin: 1.2em 0;
+  }
+  .social{
+      display: flex;
+  }
+  .social a{
+      height: 30px;
+      width: 30px;
+      background: #383535;
+      border-radius: 5px;
+      margin:10px 5px;
+      text-align: center;
+  }
+  .social a i{
+      font-size: 1.3em;
+      line-height: 30px;
+  }
+  .items h3{
+      position: relative;
+      font-size: 1.3em;
+      margin-bottom: 1rem;
+      color: aliceblue;
+  }
+  .items h3::after{
+      content:"";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: #fff;
+      bottom: -4px;
+      left: 0;
+  }
+  hr{
+      opacity: .3;
+  }
+  footer .end{
+      text-align: center;
+      padding: 20px 0 0 0;
+  }
+  @media (max-width:640px){
+      .items{
+      flex-basis: 80%;
+      margin: auto;
+  }
+  
+  }
+  
+  .center-flex{
+      min-width: 22%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
